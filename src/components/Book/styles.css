@@ -1,0 +1,94 @@
+.bookspecification{
+    height: auto;
+    background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.details{
+    text-align: justify;
+    font-size: 18px;
+    padding-right: 0px;
+    padding-left: 0px
+}
+
+.text1{
+    color: #FF4143;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 18px
+}
+
+.text2{
+    color: #54545E;
+    letter-spacing: -0.5;
+    font-weight: 300;
+    font-size: 16px
+}
+
+hr{
+    background-color: #54545E;
+    height: 3px;
+    padding-bottom: 0px
+}
+
+.content p{
+    font-weight: 300;
+    font-size: 15px
+}
+
+.content ul li{
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px
+}
+
+.content button.btn.btn-default{
+    margin-top: 10px;
+    border-radius: 17px;
+    background: #FF4143;
+    color: #fff;
+    outline: none;
+    border: 0px;
+    font-weight: 300;
+    font-size: 12px;
+    	-webkit-box-shadow: 0 10px 6px -6px #FF4143;
+	   -moz-box-shadow: 0 10px 6px -6px #FF4143;
+	        box-shadow: 0 10px 6px -6px #FF4143;
+}
+
+.content button.btn.btn-default:active{
+    border-radius: 17px;
+    background: #54545E;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 6px -6px #54545E;
+	   -moz-box-shadow: 0 10px 6px -6px #54545E;
+	        box-shadow: 0 10px 6px -6px #54545E;
+}
+
+.content button.btn.btn-default:hover{
+    border-radius: 17px;
+    background: #54545E;
+    color: #fff;
+     -webkit-box-shadow: 0 10px 6px -6px #54545E;
+	   -moz-box-shadow: 0 10px 6px -6px #54545E;
+	        box-shadow: 0 10px 6px -6px #54545E;
+}
+
+/* order book style */
+
+.booksOrder{
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    height: 350px;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 10px 6px -6px #eee;
+	   -moz-box-shadow: 0 10px 6px -6px #eee;
+            box-shadow: 0 10px 6px -6px #eee;
+}
+
+.orderingForm{
+   
+}
+

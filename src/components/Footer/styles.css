@@ -1,0 +1,22 @@
+.footer{
+    background: #54545E;
+    height: 60px;
+    padding-right: 80px;
+}
+.rightcont{
+    padding-top: 30px;
+    text-align: center;
+    display: table
+}
+.rightcont p{
+    display: table-column;
+    color: #eee;
+    font-size: 13px;
+    float: right;
+    vertical-align: middle
+}
+
+.rightcont p a{
+    color: #eee;
+    font-weight: 300
+}

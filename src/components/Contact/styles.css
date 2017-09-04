@@ -1,0 +1,12 @@
+.contact{
+    height: auto;
+    background-color: #eeeeee;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 80px;
+}
+
+label{
+    font-size: 13px;
+    color: #54545E
+}

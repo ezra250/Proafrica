@@ -1,0 +1,80 @@
+.jumbotron{
+    height: 600px;
+    background-color: #54545E;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+
+.banner{
+    background-color: #FF4143;
+    height: 600px;
+    text-align: center;
+}
+
+.banner h2{
+    color: #ffffff;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 14px
+}
+
+.banner img{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner div.content{
+    position: relative;
+    margin-top: 100px;
+}
+
+.banner p.proverb{
+    color: #ffffff;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 13px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.banner p.author{
+    color: #ffffff;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 14px
+}
+
+/* navigation */
+.navbar.navbar-default{
+    border-radius: 0px;
+    border: 0px;
+    background-color: #fff;
+    margin-bottom: 0px
+}
+
+.navbar-default .navbar-nav li{
+    font-weight: 300;
+    font-size: 13px
+}
+
+.navbar-default .navbar-nav li.current{
+   color: #fff;
+   background-color: #54545E;
+}
+
+.navbar-default .navbar-nav li a:hover{
+   color: #fff;
+   background-color: #54545E;
+}
+
+.navbar-default .navbar-nav li a:active{
+   color: #fff;
+   background-color: #54545E;
+}
+
+.navbar-default .navbar-nav li a:focus{
+   color: #fff;
+   background-color: #54545E;
+}
