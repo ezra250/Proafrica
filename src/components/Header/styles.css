@@ -1,14 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
 .jumbotron{
     height: 600px;
-    background-color: #54545E;
     padding-top: 0px;
     margin-bottom: 0px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(64, 64, 64, 0) 0%,
+    rgba(64, 64, 64, 0.3) 0%,
+    rgba(0, 0, 0, 1) 100%
+    ),url('./image/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 0px
+}
+
+.smallheader{
+    height: 50px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(64, 64, 64, 0) 0%,
+    rgba(64, 64, 64, 0.3) 0%,
+    rgba(0, 0, 0, 1) 100%
+    ),url('./image/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 0px
 }
 
 .banner{
     background-color: #FF4143;
-    height: 600px;
+    height: 100%;
     text-align: center;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .banner h2{
@@ -46,6 +73,58 @@
     font-size: 14px
 }
 
+.showcase{
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.showcase div.container{
+  height: auto;
+  display: table-cell;
+  vertical-align: bottom;
+  float: none;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-right: 50px;
+}
+
+.showcase div.container span{
+  color: #fff;
+  font-size: 20px;
+}
+
+.quotes h3{
+  font-family: 'Shrikhand', cursive;
+  color: #B7C2BE;
+  font-size: 25px
+}
+
+blockquote {
+  background: transparent;
+  border-left: 10px solid #B7C2BE;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #B7C2BE;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.quotes p{
+  color: #969F9C
+}
+
 /* navigation */
 .navbar.navbar-default{
     border-radius: 0px;
@@ -56,7 +135,7 @@
 
 .navbar-default .navbar-nav li{
     font-weight: 300;
-    font-size: 13px
+    font-size: 15px
 }
 
 .navbar-default .navbar-nav li.current{

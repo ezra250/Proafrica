@@ -1,8 +1,9 @@
 .bookspecification{
     height: auto;
-    background-color: #eeeeee;
+    background-color: #f5f5f1;
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 .details{
@@ -12,18 +13,21 @@
     padding-left: 0px
 }
 
-.text1{
-    color: #FF4143;
-    letter-spacing: -0.5;
-    font-weight: 900;
-    font-size: 18px
-}
-
-.text2{
+.p{
     color: #54545E;
     letter-spacing: -0.5;
     font-weight: 300;
-    font-size: 16px
+    font-size: 15px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.btn-primary{
+   
+}
+
+.btn-primary:hover{
+    background:#54545E ;
+    border: 0px;
 }
 
 hr{
@@ -87,8 +91,10 @@ hr{
 	   -moz-box-shadow: 0 10px 6px -6px #eee;
             box-shadow: 0 10px 6px -6px #eee;
 }
-
-.orderingForm{
-   
-}
-
+/* 
+.inputButton{
+    text-align: center;
+    padding-top: 12px;
+    font-size: 13px;
+    text-decoration: none
+} */

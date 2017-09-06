@@ -1,38 +1,35 @@
-.contact{
+div.panafrica{
     height: auto;
-    background-color: #eeeeee;
+    background-color: #ffffff;
     padding-top: 30px;
     padding-bottom: 30px;
-    padding-right: 80px;
+    padding-right: 30px;
 }
-
-label{
-    font-size: 13px;
-    color: #54545E
-}
-#logbox {
-    padding: 10px;
-    margin: 50px auto;
-    width: 340px;
+.panel{
     background-color: #fff;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  h1 {
+}
+
+.subscribebox{
+    
+}
+
+.subscribebox div.panel-default{
     text-align: center;
+}
+
+.subscribebox div.panel-heading{
+    background: #ffffff;
+    border-bottom:0px
+}
+.subscribebox div.panel-heading h1{
     font-size: 175%;
-    color: #757575;
-    font-weight: 300;
-  }
-  
-  h1, input {
-    font-family: "Open Sans", Helvetica, sans-serif;
-  }
+    font-weight: 300px
+}
 
-
-.input {
+.subscribebox div.panel-body form div input{
     width: 75%;
     height: 50px;
     display: block;
@@ -40,11 +37,15 @@ label{
     padding: 0 15px;
     border: none;
     border-bottom: 2px solid #ebebeb;
-  }
-  .input:focus {
+    outline: none;
+}
+
+
+.subscribebox div.panel-body form div input:focus{
     outline: none;
     border-bottom-color: #3CC !important;
-  }
-  .input:hover {
+}
+
+.subscribebox div.panel-body form div input:hover{
     border-bottom-color: #dcdcdc;
-  }
+}

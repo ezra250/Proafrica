@@ -5,30 +5,17 @@ import './styles.css';
 const Contact = () => (
     <div className="container-fluid contact">
         <div className="row">
-            <div className="col-xs-12 col-sm-6 col-md-8"></div>
-            <div className="col-xs-12 col-sm-6 col-md-4 details">
-                <h2><span className="text1">Contact</span><span className="text2"> Us</span></h2>
-                <hr></hr>
-                <div className="content">
-                    <div className="form-group col-sm-6">
-                        <label>Full Name:</label>
-                        <input type="text" className="form-control"/>
-                    </div>
-
-                    <div className="form-group col-sm-6">
-                        <label>Email:</label>
-                        <input type="text" className="form-control"/>
-                    </div>
-
-                    <div className="form-group col-sm-12">
-                        <label>Message:</label>
-                        <textarea className="form-control" cols="5" rows="4"/>
-                    </div>
-                    <div className="form-group col-sm-12">
-                        <button className="btn btn-default">Submit</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-md-offset-6">
+            <div id="logbox">
+                <form id="signup">
+                    <h1>Talk to us</h1>
+                    <input name="user[name]" type="text" placeholder="What's your name?" pattern="^[\w]{3,16}$" autofocus="autofocus" required="required" className="input pass"/>
+                    <input name="user[password]" type="email" placeholder="What's your email?" required="required" className="input email"/>
+                    <textarea name="user[password]" placeholder="Message" required="required" className="input pass" cols="5" row="3"/>
+                    <input type="submit" value="Submit" className="inputButton"/>
+                </form>
             </div>
+       </div>
         </div>
     </div>
 );

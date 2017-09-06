@@ -4,8 +4,7 @@ import './styles.css';
 
 const BookOrder = () => (
     <div className="container-fluid booksOrder">
-        {/* <h2><span className="text1">Pro</span><span className="text2"> Africa</span> Specification</h2> */}
-        <div className="row">
+         <div className="row">
             <div className="col-sm-6 col-md-6 orderingForm">
                 {/* <div className="form-group col-md-6">
                     <label>Quantity:</label>

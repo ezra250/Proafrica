@@ -1,15 +1,4 @@
-.contact{
-    height: auto;
-    background-color: #eeeeee;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 80px;
-}
 
-label{
-    font-size: 13px;
-    color: #54545E
-}
 #logbox {
     padding: 10px;
     margin: 50px auto;
@@ -18,6 +7,7 @@ label{
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    text-align: center
   }
   
   h1 {
@@ -29,6 +19,10 @@ label{
   
   h1, input {
     font-family: "Open Sans", Helvetica, sans-serif;
+  }
+
+  span{
+    font-size: 11px
   }
 
 

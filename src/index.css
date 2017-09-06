@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 *{
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 #root{
@@ -23,3 +24,38 @@ body{
     border-color: #54545E;
     box-shadow: none
 }
+
+.text1{
+    color: #FF4143;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.inputButton {
+    position: relative;
+    width: 85%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: #FF4143;
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #7B1F20;
+    -moz-box-shadow: 0 5px 0 #7B1F20;
+    box-shadow: 0 5px 0 #7B1F20;
+  }
+  .inputButton:hover {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 #7B1F20;
+    -moz-box-shadow: 0 3px 0 #7B1F20;
+    box-shadow: 0 3px 0 #7B1F20;
+  }
+  .inputButton:active {
+    top: 5px;
+    box-shadow: none;
+  }
+  .inputButton:focus {
+    outline: none;
+  }
