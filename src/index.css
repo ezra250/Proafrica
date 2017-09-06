@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 #root{

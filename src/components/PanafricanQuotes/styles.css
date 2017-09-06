@@ -7,13 +7,39 @@ div.panafrica{
 }
 .panel{
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 2px #828a87;
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px
 }
 
-.subscribebox{
-    
+.panel1{
+    background: #FF4143;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    display: table;
+}
+
+.pane2{
+    background: #fff;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    display: table;
+}
+
+.pane2 div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text{
+    height: 100%;
+    color: #fff;
+    font-family: 'Shrikhand', cursive;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .subscribebox div.panel-default{
@@ -22,11 +48,12 @@ div.panafrica{
 
 .subscribebox div.panel-heading{
     background: #ffffff;
-    border-bottom:0px
+    border-bottom:0px;
+    padding: 10px
 }
 .subscribebox div.panel-heading h1{
     font-size: 175%;
-    font-weight: 300px
+    font-weight: 300px;
 }
 
 .subscribebox div.panel-body form div input{

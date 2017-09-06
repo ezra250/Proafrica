@@ -1,9 +1,15 @@
 .contact{
     height: auto;
-    background-color: #eeeeee;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 80px;
+    background-image: linear-gradient(
+      to bottom,
+      rgb(238, 238, 238) 0%,
+      rgba(238, 238, 238, 0.5) 0%,
+      rgb(238, 238, 238) 100%
+      ),url('./images/contact.png');
+      background-position: center;
 }
 
 label{

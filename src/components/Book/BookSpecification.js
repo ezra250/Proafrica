@@ -8,7 +8,7 @@ const BookSpecification = () => (
     <div className="container bookspecification">
         <div className="row">
             <div className="col-xs-12 col-sm-6 col-md-8">
-                <img src={bookImage} width="450px"/>
+                <img src={bookImage} width="450px" className="img-responsive"/>
             </div>
             <div className="col-xs-12 col-sm-6 col-md-4 details">
                 <h3 className="text1">What is Lorem Ipsum?</h3>

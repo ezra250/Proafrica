@@ -13,7 +13,7 @@ const defaultProps = {
     initialPage: 1
 }
 
-class Pagination extends React.Component {
+class PaginationFive extends React.Component {
     constructor(props) {
         super(props);
         this.state = { pager: {} };
@@ -56,10 +56,10 @@ class Pagination extends React.Component {
 
     getPager(totalItems, currentPage, pageSize) {
         // default to first page
-        currentPage = currentPage || 1;
+        currentPage = currentPage || 10;
 
         // default page size is 10
-        pageSize = pageSize || 1;
+        pageSize = pageSize || 5;
 
         // calculate total pages
         var totalPages = Math.ceil(totalItems / pageSize);
@@ -113,7 +113,7 @@ class Pagination extends React.Component {
            }
 
            return (
-               <div></div>
+            <div></div>
             //    <ul className="pagination">
             //        <li className={pager.currentPage === 1 ? 'disabled' : ''}>
             //            <a onClick={() => this.setPage(1)}>First</a>
@@ -136,6 +136,6 @@ class Pagination extends React.Component {
            );
        }
 }
-Pagination.propTypes = propTypes;
-Pagination.defaultProps
-export default Pagination;
+PaginationFive.propTypes = propTypes;
+PaginationFive.defaultProps
+export default PaginationFive;
