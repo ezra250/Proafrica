@@ -5,7 +5,7 @@ import './styles.css'
 const OrderForm = () => (
     <div className="container-fluid contact">
         <div className="row">
-            <div className="col-md-6 col-md-offset-6">
+            <div className="col-md-4 col-md-offset-4">
                 <div id="logbox">
                     <form id="signup">
                         <h1>Ordering form</h1>
@@ -41,7 +41,7 @@ const OrderForm = () => (
                             pattern="^[\w]{3,16}$"
                             required="required" 
                             className="input pass"/>
-                        <input type="submit" value="Submit" className="inputButton"/>
+                        <input type="submit" value="Submit" className="btn inputButton"/>
                     </form>
                 </div>
         </div>

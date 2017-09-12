@@ -6,12 +6,12 @@ import { OrderForm } from '../components/Form';
 
 const OrderScreen = () => (
     <div>
-        <div className="smallHeader">
+        {/* <div className="smallHeader">
             <SmallHeader/>
         </div>
         <div className="navigation">
             <Navigation/>
-        </div>
+        </div> */}
         <div className="orderform">
             <OrderForm/>
         </div>
