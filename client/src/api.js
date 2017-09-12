@@ -1,0 +1,1 @@
+export const quoteURL = "https://api.myjson.com/bins/zl5kp";

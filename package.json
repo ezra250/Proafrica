@@ -1,23 +1,28 @@
 {
-  "name": "proafrica",
-  "version": "0.1.0",
-  "private": true,
+  "name": "ProAfrica",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "lodash.range": "^3.2.0",
-    "logger": "0.0.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-redux": "^5.0.6",
-    "react-scripts": "1.0.12",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "lodash": "^4.17.4",
+    "mysql": "github:mysqljs/mysql",
+    "nodemailer": "^4.1.0",
     "redux": "^3.7.2",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.2.0",
-    "thunk": "0.0.1"
+    "validator": "^8.1.0"
+  },
+  "engines": {
+    "node": "8.2.1",
+    "npm": "4.6.1",
+    "yarn": "0.27.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && yarn --production=false && yarn run build "
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "description": ""
 }

@@ -1,0 +1,99 @@
+div.panafrica{
+    height: auto;
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+}
+.panel{
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 0px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+.panel:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+    z-index: 1
+}
+
+.panel:hover::after {
+    opacity: 1;
+  }
+
+.panel1{
+    background: #FF4143;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.panel {  
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.panel2{
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.pane2 div{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.text{
+    height: 100%;
+    color: #fff;
+    font-family: 'Shrikhand', cursive;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subscribebox div.panel-default{
+    text-align: center;
+}
+
+.subscribebox div.panel-heading{
+    background: #ffffff;
+    border-bottom:0px;
+    padding: 10px
+}
+.subscribebox div.panel-heading h1{
+    font-size: 175%;
+    font-weight: 300px;
+}
+
+.subscribebox div.panel-body form div input{
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+    outline: none;
+}
+
+
+.subscribebox div.panel-body form div input:focus{
+    outline: none;
+    border-bottom-color: #3CC !important;
+}
+
+.subscribebox div.panel-body form div input:hover{
+    border-bottom-color: #dcdcdc;
+}

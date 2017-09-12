@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.02cm
+}
+
+#root{
+    height: 100vh;
+    overflow-x: hidden;
+    color: #54545E;
+}
+
+.form-control{
+    outline: none;
+    border-radius: 0px
+}
+
+.form-control:focus {
+    border-color: #54545E;
+    box-shadow: none
+}
+
+.text1{
+    color: #54545E;
+    letter-spacing: -0.5;
+    font-weight: 900;
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.inputButton {
+    position: relative;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: #FF4143;
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #7B1F20;
+    -moz-box-shadow: 0 5px 0 #7B1F20;
+    box-shadow: 0 5px 0 #7B1F20;
+  }
+  .inputButton:hover {
+    top: 2px;
+    -webkit-box-shadow: 0 3px 0 #7B1F20;
+    -moz-box-shadow: 0 3px 0 #7B1F20;
+    box-shadow: 0 3px 0 #7B1F20;
+  }
+  .inputButton:active {
+    top: 5px;
+    box-shadow: none;
+  }
+  .inputButton:focus {
+    outline: none;
+  }

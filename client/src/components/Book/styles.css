@@ -1,0 +1,126 @@
+.bookspecification{
+    height: auto;
+    background:url('./images/BACKGROUND.png');
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.details{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.details h3{
+    border-bottom: 2px solid #54545E
+}
+
+.details p{
+    color: #54545E;
+    letter-spacing: 0.02cm;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.details ol li{
+    color: #54545E;
+    letter-spacing: 0.02cm;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.list-numbered {
+    list-style: none;
+    margin-left: 1em;
+    counter-reset: line;
+}
+
+.list-numbered > li {
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+  
+.list-numbered > li:before {
+	position: absolute;
+	left: -2.25em;
+	display: inline-block;
+    width: 22px;
+	height: 22px;
+	margin-right: 0.5em;
+    background-color: #FF4143;
+	border-radius: 50%;
+	color: #fff;
+	text-align:center;
+    line-height: 1.25em;
+	counter-increment: line;
+	content: counter(line);
+}
+.btn-primary:hover{
+    background:#54545E ;
+    border: 0px;
+}
+
+hr{
+    background-color: #54545E;
+    height: 3px;
+    padding-bottom: 0px
+}
+
+.content p{
+    font-weight: 300;
+    font-size: 15px
+}
+
+.content ul li{
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px
+}
+
+.content button.btn.btn-default{
+    margin-top: 10px;
+    border-radius: 17px;
+    background: #FF4143;
+    color: #fff;
+    outline: none;
+    border: 0px;
+    font-weight: 300;
+    font-size: 12px;
+    	-webkit-box-shadow: 0 10px 6px -6px #FF4143;
+	   -moz-box-shadow: 0 10px 6px -6px #FF4143;
+	        box-shadow: 0 10px 6px -6px #FF4143;
+}
+
+.content button.btn.btn-default:active{
+    border-radius: 17px;
+    background: #54545E;
+    color: #fff;
+    -webkit-box-shadow: 0 10px 6px -6px #54545E;
+	   -moz-box-shadow: 0 10px 6px -6px #54545E;
+	        box-shadow: 0 10px 6px -6px #54545E;
+}
+
+.content button.btn.btn-default:hover{
+    border-radius: 17px;
+    background: #54545E;
+    color: #fff;
+     -webkit-box-shadow: 0 10px 6px -6px #54545E;
+	   -moz-box-shadow: 0 10px 6px -6px #54545E;
+	        box-shadow: 0 10px 6px -6px #54545E;
+}
+
+/* order book style */
+
+.booksOrder{
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    height: 350px;
+    background-color: #FFF;
+    -webkit-box-shadow: 0 10px 6px -6px #eee;
+	   -moz-box-shadow: 0 10px 6px -6px #eee;
+            box-shadow: 0 10px 6px -6px #eee;
+}
