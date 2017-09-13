@@ -15,6 +15,9 @@ const OrderScreen = () => (
         <div className="orderform">
             <OrderForm/>
         </div>
+        <div className="navigation">
+            <Navigation/>
+        </div>
     </div>
 );
 
