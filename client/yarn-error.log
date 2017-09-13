@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /home/dk-developer/bin:/home/dk-developer/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/dk-developer/Android/Sdk/tools:/home/dk-developer/Android/Sdk/platform-tools:/home/dk-developer/Android/Sdk/tools
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.2.1
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "proafrica",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "lodash.range": "^3.2.0",
+      "logger": "0.0.1",
+      "react": "^15.6.1",
+      "react-dom": "^15.6.1",
+      "react-redux": "^5.0.6",
+      "react-scripts": "1.0.12",
+      "redux": "^3.7.2",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.2.0",
+      "thunk": "0.0.1"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build",
+      "test": "react-scripts test --env=jsdom",
+      "eject": "react-scripts eject"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: EPERM: operation not permitted, utime '/home/dk-developer/Projects/P/proafrica/node_modules/autoprefixer/node_modules/postcss/README.md'
