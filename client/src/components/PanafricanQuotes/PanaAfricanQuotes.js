@@ -18,7 +18,8 @@ class PanaAfricanQuotes extends Component {
             pageOfItems: [],
             email: '',
             errors: {},
-            success:false
+            success:false,
+            isLoading: false,
           };
         this.onChangePage = this.onChangePage.bind(this);
         this.onSubmitEmail = this.onSubmitEmail.bind(this);
@@ -50,13 +51,14 @@ class PanaAfricanQuotes extends Component {
     
     onSubmitEmail(e){
         e.preventDefault();
-        this.setState({errors: {}, success: false})
+        this.setState({isLoading: true,errors: {}, success: false})
         this.props.submitData(this.state)
         .then(
             ({data}) => {
                 this.setState({
                     success: data.success,
-                    email: ''
+                    email: '',
+                    isLoading: false,
                 })
             },
             (data) => {
@@ -111,7 +113,9 @@ class PanaAfricanQuotes extends Component {
                                     />
                                     {errors.email && <span className="help-block">{errors.email}</span>}
                                 </div>
-                                <input type="submit" value={`${this.props.isLoadingPending ? "Submitting..." : "Get subscribed!"}`} className="btn inputButton" onClick={this.onSubmitEmail}/>
+                                <input type="submit" value={`${this.state.isLoading ? "Submitting..." : "Get subscribed!"}`} 
+                                    className="btn inputButton" onClick={this.onSubmitEmail}
+                                    disabled={this.state.isLoading}/>
                             </form>
                         </div>
                     </div>

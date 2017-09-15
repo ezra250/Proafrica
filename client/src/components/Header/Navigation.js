@@ -9,11 +9,12 @@ class Navigation extends React.Component{
     static proptypes = {
         isSelected: PropTypes.bool,
         isScrolled: PropTypes.bool,
+        bottom: PropTypes.bool
     }
 
     render(){
         return(
-            <nav className="navbar navbar-default">
+            <nav className={`${this.props.bottom ? 'navbar navbar-default navbar-fixed-bottom' :"navbar navbar-default "}`}>
                 {/* <!-- Brand and toggle get grouped for better mobile display --> */}
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">

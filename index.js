@@ -6,6 +6,7 @@ const app = express();
 const subscribers = require('./api/subscribers');
 const contact = require('./api/contactus');
 const quotes = require('./api/Quotes');
+const order = require('./api/order');
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/src/index')));
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Put all API endpoints under '/api'
 app.use("/users/subscribers", subscribers);
 app.use("/users/contactus", contact);
+app.use("/order/orders", order);
 app.use("/quotes", quotes);
 
 // The "catchall" handler: for any request that doesn't

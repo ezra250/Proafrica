@@ -7,7 +7,6 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "lodash": "^4.17.4",
-    "mysql": "github:mysqljs/mysql",
     "nodemailer": "^4.1.0",
     "redux": "^3.7.2",
     "validator": "^8.1.0"
@@ -19,7 +18,8 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    // "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "deploy": "firebase deploy"
   },
   "devDependencies": {},
   "keywords": [],

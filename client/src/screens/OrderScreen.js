@@ -16,7 +16,7 @@ const OrderScreen = () => (
             <OrderForm/>
         </div>
         <div className="navigation">
-            <Navigation/>
+            <Navigation bottom={true}/>
         </div>
     </div>
 );

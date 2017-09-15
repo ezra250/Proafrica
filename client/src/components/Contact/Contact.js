@@ -29,11 +29,14 @@ class Contact extends Component{
 
     submitForm(e){
         e.preventDefault();
-        this.setState({isLoading: true})
+        this.setState({isLoading: true, data: {}, errors: {}})
         this.props.submitData(this.state).then(
             ({data}) => {
                 this.setState({
                     isLoading: false,
+                    name:'',
+                    email:'',
+                    message:'',
                     data
                 })
             },
@@ -71,6 +74,7 @@ class Contact extends Component{
                 <div className="row">
                 <div className="col-md-6 col-md-offset-3">
                     <div id="logbox">
+                    {data.status === 'success' && <div className="alert alert-success">Thank you we are happy to hearing from you</div>}
                         <form id="signup" onSubmit={this.submitForm}>
                             <h1>Talk to us</h1>
                             <input 
