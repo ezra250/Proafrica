@@ -12,7 +12,7 @@ class PanaAfricanQuotes extends Component {
 
     constructor(props){
         super(props);
-    
+
         this.state = {
             quotes: [],
             pageOfItems: [],
@@ -29,7 +29,7 @@ class PanaAfricanQuotes extends Component {
         // update state with new page of items
         this.setState({ pageOfItems: pageOfItems });
     }
-  
+
     componentDidMount(){
         this.props.getAllQuotes().then(
           ({data}) => {
@@ -48,7 +48,7 @@ class PanaAfricanQuotes extends Component {
         isSuccess: PropTypes.bool,
         isErrors: PropTypes.bool,
     }
-    
+
     onSubmitEmail(e){
         e.preventDefault();
         this.setState({isLoading: true,errors: {}, success: false})
@@ -79,15 +79,17 @@ class PanaAfricanQuotes extends Component {
             <div className="container panafrica">
                 <div className="col-md-7">
                     <div className="row">
-                        <div className="col-xs-12 col-sm-12 col-md-12 ">
+                        <div className="col-xs-12 col-sm-6 col-md-6 " style={{paddingRight:0,paddingLeft:0}}>
                             <div className="panel panel1">
                                 <div className="panel-body">
                                     <h3 className="text">Pana African Quotes</h3>
                                 </div>
                             </div>
+                        </div>
+                        <div>
                             {this.state.pageOfItems.map((item,id) =>
-                                <div className="col-xs-12 col-md-4 col-sm-12 panel2"  key={id}>
-                                    <div className="panel">
+                                <div className="col-xs-12 col-md-6 col-sm-12"  key={id}  style={{paddingRight:0,paddingLeft:0}}>
+                                    <div className="panel panel2 panel-default">
                                         <div className="panel-body"><p className="qh">{item[Object.keys(item)[1]]}</p>
                                         <span>{item[Object.keys(item)[2]]}</span></div>
                                     </div>
@@ -107,13 +109,13 @@ class PanaAfricanQuotes extends Component {
                             {this.state.success && <div className="alert alert-success">Thank you for subscribing, we will contact you soon</div>}
                             <form>
                                 <div className={`${errors.email ? "group-form has-error" : "form-group"}`}>
-                                    <input type="text" placeholder="Email" name='email' 
+                                    <input type="text" placeholder="Email" name='email'
                                         onChange={this.onChangeEmail}
                                         value={this.state.email}
                                     />
                                     {errors.email && <span className="help-block">{errors.email}</span>}
                                 </div>
-                                <input type="submit" value={`${this.state.isLoading ? "Submitting..." : "Get subscribed!"}`} 
+                                <input type="submit" value={`${this.state.isLoading ? "Submitting..." : "Get subscribed!"}`}
                                     className="btn inputButton" onClick={this.onSubmitEmail}
                                     disabled={this.state.isLoading}/>
                             </form>
@@ -122,7 +124,7 @@ class PanaAfricanQuotes extends Component {
                 </div>
             </div>
         );
-        
+
     }
 }
 export default connect(null,{getAllQuotes,submitData}) (PanaAfricanQuotes);

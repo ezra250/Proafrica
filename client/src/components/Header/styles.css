@@ -9,9 +9,9 @@
     rgba(0, 0, 0, 1) 100%
     ),url('./image/bg.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
-    padding-bottom: 0px
+    padding-bottom: 0px;
+    height: 80%
 }
 
 .smallheader{
@@ -31,10 +31,10 @@
 }
 
 .banner{
-    background-color: #FF4143;
-    height: 90vh;
+    background-color: #FF0000;
     text-align: center;
      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+     height: 90vh;
 }
 
 .banner h2{
@@ -75,7 +75,6 @@
 .showcase{
   text-align: center;
   height: 90vh;
-  position: relative;
 }
 
 .showcase div.container{
@@ -128,8 +127,8 @@ blockquote p {
 .navbar.navbar-default{
     border-radius: 0px;
     border: 0px;
-    background-color: #fff;
-    margin-bottom: 0px
+    background: #ffffff;
+    margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav li{
@@ -139,20 +138,20 @@ blockquote p {
 
 .navbar-default .navbar-nav li.current{
    color: #fff;
-   background-color: #54545E;
+   background-color: #4c4c4c;
 }
 
 .navbar-default .navbar-nav li a:hover{
    color: #fff;
-   background-color: #54545E;
+   background-color: #4c4c4c;
 }
 
 .navbar-default .navbar-nav li a:active{
    color: #fff;
-   background-color: #54545E;
+   background-color: #4c4c4c;
 }
 
 .navbar-default .navbar-nav li a:focus{
    color: #fff;
-   background-color: #54545E;
+   background-color: #4c4c4c;
 }

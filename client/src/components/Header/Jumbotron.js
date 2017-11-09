@@ -49,35 +49,37 @@ class Jumbotron extends Component {
     const {quotes} = this.state;
     console.log(quotes)
     return (
-        <div className="jumbotron row">
-           <div className="banner col-xs-12 col-sm-12 col-md-3">
-               <h2>MEETING BOOK</h2>
-               <img src={logo} width="200px"/>
-               <div className="content">
-                <p className="proverb">"Until, the lion tell my side of the story the tale of the hunt will always glorify the hunter"</p>
-                <p className="author">African Proverb</p>
-               </div>
-           </div>
-           <div className="showcase col-xs-12 col-sm-12 col-md-9">
-              <div className="container ">
-                {this.props.isLoadingPending ? <span>loading...</span> : null}
-                <div className="quotes">
-                  <h3>The Quote of the day</h3>
-                  <blockquote>
-                  {this.state.pageOfItems.map((item,id) => (
-                    <p key={id}>
-                        {item[Object.keys(item)[1]]}
-                        <span>{item[Object.keys(item)[2]]}</span>
-                    </p>
-                  ))}
-                  </blockquote>
-                  <Pagination
-                    items={quotes}
-                    onChangePage={this.onChangePage}
-                  />
+        <div className="jumbotron">
+          <div className="row">
+            <div className="banner col-xs-12 col-sm-12 col-md-3">
+                <h2>MEETING BOOK</h2>
+                <img src={logo} width="200px"/>
+                <div className="content">
+                  <p className="proverb">"Until, the lion tell my side of the story the tale of the hunt will always glorify the hunter"</p>
+                  <p className="author">African Proverb</p>
                 </div>
-              </div>
-           </div>
+            </div>
+            <div className="showcase col-xs-12 col-sm-12 col-md-9" style={{margin:0}}>
+                <div className="container ">
+                  {this.props.isLoadingPending ? <span>loading...</span> : null}
+                  <div className="quotes">
+                    <h3>The Quote of the day</h3>
+                    <blockquote>
+                    {this.state.pageOfItems.map((item,id) => (
+                      <p key={id}>
+                          {item[Object.keys(item)[1]]}
+                          <span>{item[Object.keys(item)[2]]}</span>
+                      </p>
+                    ))}
+                    </blockquote>
+                    <Pagination
+                      items={quotes}
+                      onChangePage={this.onChangePage}
+                    />
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
     );
   }

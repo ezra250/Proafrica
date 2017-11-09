@@ -75,7 +75,7 @@ class OrderForm extends Component{
     render(){
         const {errors, data} = this.state
         return(
-            <div className="container-fluid" style={{background: '#ccc', height: '100%', alignItems:'center'}}>
+            <div className="container-fluid" style={{background: '#ccc', height: '100vh', alignItems:'center'}}>
                 <div className="row">
                     <div className="col-md-4 col-md-offset-4">
                         <div id="logbox">
@@ -86,39 +86,39 @@ class OrderForm extends Component{
                                 <h1>Ordering form</h1>
                                 <span className="help-block">All fields is required!</span>
                                 {data.status === 'success' && <div className="alert alert-success">Your order is successfully submitted, soon we reach you back</div>}
-                                <input 
-                                    name="quantity" 
-                                    type="number" 
-                                    placeholder="Quantity" 
+                                <input
+                                    name="quantity"
+                                    type="number"
+                                    placeholder="Quantity"
                                     onChange={this.handleQuantityChange}
                                     value={this.state.quantity}
                                     className="input pass"/>
                                     {errors.quantity && <span className="help-block" style={{color: 'red'}}>{errors.quantity}</span>}
-                                <input 
-                                    name="name" 
-                                    type="text" placeholder="What's your name?" 
+                                <input
+                                    name="name"
+                                    type="text" placeholder="What's your name?"
                                     value={this.state.name}
                                     onChange={this.handlenameChange}
                                     className="input pass"/>
                                     {errors.name && <span className="help-block" style={{color: 'red'}}>{errors.name}</span>}
-                                <input 
-                                    name="email" 
-                                    type="text" placeholder="What's your email?" 
+                                <input
+                                    name="email"
+                                    type="text" placeholder="What's your email?"
                                     value={this.state.email}
                                     onChange={this.handleemailChange}
                                     className="input pass"/>
                                     {errors.email && <span className="help-block" style={{color: 'red'}}>{errors.email}</span>}
-                                <input 
-                                    name="phone" 
+                                <input
+                                    name="phone"
                                     value={this.state.phone}
-                                    type="text" placeholder="What's your phone number?" 
+                                    type="text" placeholder="What's your phone number?"
                                     onChange={this.handlephoneChange}
                                     className="input pass"/>
                                     {errors.phone && <span className="help-block" style={{color: 'red'}}>{errors.phone}</span>}
-                                <input 
+                                <input
                                     name="location"
                                     value={this.state.location}
-                                    type="text" placeholder="What's your location?" 
+                                    type="text" placeholder="What's your location?"
                                     onChange={this.handlelocationChange}
                                     className="input pass"/>
                                     {errors.location && <span className="help-block" style={{color: 'red'}}>{errors.location}</span>}
@@ -130,6 +130,6 @@ class OrderForm extends Component{
         </div>
         );
     }
-} 
+}
 
 export default connect(null,{submitData})(OrderForm);

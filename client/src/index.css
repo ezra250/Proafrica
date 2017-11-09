@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 13px
 }
 
 body{
@@ -10,9 +11,16 @@ body{
     letter-spacing: 0.02cm
 }
 
+p{
+    color: #010101
+}
+
+h3{
+    color: #010101
+}
+
 #root{
     height: 100vh;
-    overflow-x: hidden;
     color: #54545E;
 }
 
@@ -27,9 +35,9 @@ body{
 }
 
 .text1{
-    color: #54545E;
+    color: #000000;
     letter-spacing: -0.5;
-    font-weight: 900;
+    font-weight: 300;
     font-size: 18px;
     padding-bottom: 10px;
     font-family: 'Shrikhand', cursive;

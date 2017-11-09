@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0c1c6f34-ea30-4d30-aa8e-ffa9d74e88e2" name="ProAfrica" url="http://165.227.123.140/">
+        <fileTransfer host="165.227.123.140" port="22" rootFolder="/home/limitless_apps/Projects/Proafrica" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

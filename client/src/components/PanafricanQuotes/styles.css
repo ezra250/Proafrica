@@ -7,26 +7,9 @@ div.panafrica{
 }
 .panel{
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    border: 0px;
     border-radius: 0px;
     margin-bottom: 0px;
 }
-
-.panel:hover {
-    -webkit-transform: scale(1.25, 1.25);
-    transform: scale(1.25, 1.25);
-    cursor: pointer;
-    z-index: 1
-}
-
-.panel:hover::after {
-    opacity: 1;
-  }
 
 .panel1{
     background: #FF4143;
@@ -37,17 +20,14 @@ div.panafrica{
     justify-content: center;
     align-items: center
 }
-.panel {  
-    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.1);
-}
 
 .panel2{
-    background: #fff;
     text-align: center;
     padding: 15px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    height: 200px;
 }
 
 .pane2 div{

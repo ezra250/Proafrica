@@ -1,7 +1,8 @@
 import  React from 'react';
+import ReactDOM from 'react-dom';
 
 import { Navigation,Jumbotron } from '../components/Header';
-import { BookSpecification,BookOrder } from '../components/Book';
+import { BookSpecification } from '../components/Book';
 import { PanaAfricanQuotes } from '../components/PanafricanQuotes';
 import { Contact } from '../components/Contact';
 import { Footer } from '../components/Footer';
@@ -14,8 +15,15 @@ class App extends React.Component{
         this.state = {
             IsSelected: false,
             isScrolled : false,
+            isHome:true,
+            isBookSpec:false,
+            isPana:false,
+            isContact:false,
             quotes : [],
         };
+
+        this.getOffset = this.getOffset.bind(this);
+        this.handleScroll = this.handleScroll.bind(this);
     }
 
     handleIsSelected = () =>{
@@ -24,14 +32,42 @@ class App extends React.Component{
         });
     }
 
-    handleOnScroll = () => {
-        this.setState({
-            isScroll: window.onscroll ? true : false,
-        })
-    }
-
     handleQuotes = () => {
       console.log("help")
+    }
+
+
+
+    getOffset(element){
+        var bounding = element.getBoundingClientRect();
+        return {
+            top: bounding.top + document.body.scrollTop,
+            left: bounding.left + document.body.scrollLeft
+          };
+      }
+
+    handleScroll(){
+        const startElement = ReactDOM.findDOMNode(this.refs.bookspecification); 
+        const windowsScrollTop  = window.pageYOffset;
+        if(windowsScrollTop >= 549){ 
+          //navbar.classList.add("navbar-fixed-top");      
+          this.setState({
+            isScrolled:true
+          })     
+        }else{
+          //navbar.classList.remove("navbar-fixed-top");   
+          this.setState({
+            isScrolled:false
+          }) 
+        }
+     }
+
+     componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);        
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
     }
 
     render(){
@@ -43,10 +79,11 @@ class App extends React.Component{
                 <div className="topMenus">
                     <Navigation
                         IsSelected = {this.handleIsSelected.bind(this)}
-                        isScroll = {this.handleOnScroll.bind(this)}
+                        isScrolled = {this.state.isScrolled}
+                        navbarfixed='navbar-fixed-top'
                     />
                 </div>
-                <div className="bookspecification">
+                <div className="bookspecification"  ref='bookspecification'>
                     <BookSpecification/>
                 </div>
                 <div className="bookOrdering" id="panaafican">
